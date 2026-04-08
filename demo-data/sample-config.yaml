@@ -1,0 +1,14 @@
+environment: demo
+repository: Seppmail-HealthChecks
+partner: SEPPmail
+maintainer: Synedat Group GmbH
+focus: Health check patterns, evidence capture and readiness scoring for mail security operations
+controls:
+  - ISO/IEC 27001
+  - BAIT
+  - DORA
+  - TISAX
+  - NIS2
+notes:
+  - Example configuration only
+  - Adjust permissions and network ranges before production use

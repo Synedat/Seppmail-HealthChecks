@@ -1,0 +1,4 @@
+title: Seppmail-HealthChecks
+description: Protocol, API and routing checks for verifying the operational posture of SEPPmail-centric environments.
+theme: minima
+markdown: kramdown
