@@ -3,45 +3,105 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Seppmail-HealthChecks demo</title>
+  <title>Seppmail-HealthChecks | Synedat delivery starter</title>
   <style>
     body { font-family: Arial, Helvetica, sans-serif; margin:0; background:#f8fafc; color:#0f172a; }
-    header { background:linear-gradient(135deg,#0f172a,#1d4ed8); color:white; padding:48px 64px; }
-    main { max-width:1100px; margin:0 auto; padding:32px; }
+    header { background:linear-gradient(135deg,#0f172a,#1d4ed8); color:white; padding:56px 64px; }
+    main { max-width:1180px; margin:0 auto; padding:32px; }
+    .hero { display:grid; grid-template-columns: 1.3fr 1fr; gap:24px; align-items:center; }
+    .hero img { width:100%; border-radius:18px; background:white; border:1px solid rgba(255,255,255,.15); }
     .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
     .card { background:white; border:1px solid #cbd5e1; border-radius:18px; padding:20px; box-shadow:0 8px 24px rgba(15,23,42,.06); }
+    .pill { display:inline-block; background:#dbeafe; color:#1d4ed8; padding:8px 12px; border-radius:999px; margin-right:8px; margin-bottom:8px; }
+    .cta { display:inline-block; margin-right:12px; margin-top:12px; padding:12px 18px; border-radius:12px; text-decoration:none; font-weight:700; }
+    .cta.primary { background:#ffffff; color:#0f172a; }
+    .cta.secondary { background:transparent; color:#ffffff; border:1px solid rgba(255,255,255,.5); }
     code, pre { background:#e2e8f0; border-radius:10px; padding:2px 6px; }
     pre { padding:16px; overflow:auto; }
-    .pill { display:inline-block; background:#dbeafe; color:#1d4ed8; padding:8px 12px; border-radius:999px; margin-right:8px; margin-bottom:8px; }
+    .muted { color:#475569; }
+    footer { max-width:1180px; margin:0 auto; padding:0 32px 48px; color:#475569; }
+    @media (max-width: 900px) { .hero { grid-template-columns:1fr; } header { padding:40px 24px; } main { padding:24px; } }
   </style>
 </head>
 <body>
 <header>
-  <h1>Seppmail-HealthChecks</h1>
-  <p>Evidence-oriented health checks for operations, service reviews and managed services.</p>
-  <p>Maintained by Synedat Group GmbH in the SEPPmail partner ecosystem.</p>
+  <div class="hero">
+    <div>
+      <p><strong>SEPPmail operational readiness with Synedat</strong></p>
+      <h1>Seppmail-HealthChecks</h1>
+      <p>Use this repository as a customer-facing starter for health checks, operational validation, pilot preparation and evidence-oriented reviews around SEPPmail-related environments.</p>
+      <p>Synedat Group GmbH is positioned here as the delivery, workshop and implementation contact for customers who want to evaluate, harden or operationalize secure email environments.</p>
+      <a class="cta primary" href="https://www.synedat.com/">Contact Synedat</a>
+      <a class="cta secondary" href="../README.md">Open README</a>
+    </div>
+    <div>
+      <img src="https://www.seppmail.com/wp-content/uploads/2021/02/Produkt-SEG.jpg" alt="SEPPmail Secure Email Gateway product image from official SEPPmail website" />
+      <p style="font-size:0.92rem;margin-top:10px;color:#dbeafe;">Image origin: official SEPPmail Secure Email Gateway product page. See docs/IMAGE-SOURCES.md for source notes.</p>
+    </div>
+  </div>
 </header>
 <main>
   <section class="grid">
-    <div class="card"><h2>Focus</h2><p>Health check patterns, evidence capture and readiness scoring for mail security operations</p></div>
-    <div class="card"><h2>Demo story</h2><p>Walk through readiness scoring, findings classification and evidence export examples.</p></div>
-    <div class="card"><h2>Public value</h2><p>Use this repository as a credible technical starter for architecture reviews, operations onboarding, controlled demos and reusable engineering conversations.</p></div>
+    <div class="card"><h2>Business value</h2><p>Turn technical checks into a structured customer conversation around secure email operations, readiness and implementation planning.</p></div>
+    <div class="card"><h2>What Synedat can deliver</h2><p>Discovery workshops, health checks, architecture reviews, automation support, evidence bundles and handover-ready operational documentation.</p></div>
+    <div class="card"><h2>What SEPPmail publicly provides</h2><p>Secure Email Gateway capabilities such as automatic encryption, standards support, GINA, clustering, monitoring, reporting and LDAP/AD integration.</p></div>
   </section>
+
   <section>
-    <h2>Metrics to show</h2>
-    <span class="pill">Readiness score</span><span class="pill">Critical findings</span><span class="pill">Warning trends</span><span class="pill">Evidence completeness</span>
+    <h2>Use this in customer conversations</h2>
+    <span class="pill">Health check workshop</span>
+    <span class="pill">Pilot preparation</span>
+    <span class="pill">Operational readiness</span>
+    <span class="pill">Evidence capture</span>
+    <span class="pill">Post-change validation</span>
   </section>
+
   <section class="grid">
-    <div class="card"><h2>Sample report</h2><pre>{
+    <div class="card">
+      <h2>Sample readiness result</h2>
+      <pre>{
   "score": 92,
   "criticalFindings": 0,
   "warnings": 2,
   "recommendation": "continue monitoring",
   "evidenceId": "health-demo-008"
-}</pre></div>
-    <div class="card"><h2>Useful next extensions</h2><ul><li>HTML scorecard</li><li>finding classifier</li><li>threshold tuning examples</li><li>trend export starter</li></ul></div>
+}</pre>
+    </div>
+    <div class="card">
+      <h2>Typical next step</h2>
+      <ul>
+        <li>Review findings with Synedat</li>
+        <li>Prioritize operational gaps</li>
+        <li>Define pilot or production hardening steps</li>
+        <li>Extend the checks for customer-specific evidence workflows</li>
+      </ul>
+    </div>
   </section>
-  <section class="card"><h2>Synedat</h2><p>Synedat Group GmbH works across software engineering, cloud, infrastructure, operations and security-related implementation topics. The public repository family is intentionally structured so teams can discover, evaluate and adapt working material quickly.</p><p><a href="https://www.synedat.com/">www.synedat.com</a></p></section>
+
+  <section class="grid">
+    <div class="card">
+      <h2>Source-backed positioning</h2>
+      <p class="muted">Official SEPPmail pages describe the Secure Email Gateway product capabilities and explain that customers work with accredited partners for evaluation, introduction and maintenance. This page intentionally uses that public context and keeps the source trail visible in the repository.</p>
+    </div>
+    <div class="card">
+      <h2>Relevant docs</h2>
+      <ul>
+        <li>docs/LANDING-PAGE-COPY.md</li>
+        <li>docs/SEPPMAIL-REFERENCES.md</li>
+        <li>docs/IMAGE-SOURCES.md</li>
+        <li>docs/SALES-REPOSITIONING.md</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Synedat</h2>
+    <p>Synedat Group GmbH works across software engineering, cloud, infrastructure, operations and security-related implementation. This repository family is intentionally structured so customer teams can discover, evaluate and adapt working material quickly.</p>
+    <p><a href="https://www.synedat.com/">www.synedat.com</a></p>
+  </section>
 </main>
+<footer>
+  <p>Source note: product and partner context referenced from official SEPPmail pages. See docs/SEPPMAIL-REFERENCES.md and docs/IMAGE-SOURCES.md.</p>
+</footer>
 </body>
 </html>

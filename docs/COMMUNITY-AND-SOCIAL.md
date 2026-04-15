@@ -1,17 +1,16 @@
-
 ## Community and social starter copy
 
 ### Short announcement
-We published **Seppmail-HealthChecks** to make practical SEPPmail-related operations, automation and architecture work easier to adopt, extend and review. The repository bundles examples, docs, diagrams and operational patterns maintained by **Synedat**.
+We published **Seppmail-HealthChecks** as a public Synedat starter for customer-facing health checks, operational readiness reviews and evidence-oriented verification around SEPPmail-related environments.
 
 ### Technical teaser
-Looking for concrete examples around **health checks**, **SMTP** and **TLS**? Start with the README, follow the architecture diagrams and adapt the examples to your own environment.
+Looking for concrete examples around **SEPPmail-related health checks**, **SMTP**, **TLS**, **API reachability** and **evidence capture**? Start with the README, landing page and workshop kit.
 
-### Community-friendly post
-We have expanded **Seppmail-HealthChecks** with practical examples, structured documentation, security and compliance mapping, and operational guidance for teams working with SEPPmail-related services. Feedback, issues and extensions are welcome.
+### Customer-facing post
+**Seppmail-HealthChecks** brings together practical examples, structured documentation, operational guidance and workshop-ready material so customer teams can move faster from first conversation to reviewable health-check baseline. It is maintained by **Synedat Group GmbH** as a reusable technical sales and delivery asset.
 
 ### Call to action
-- Review the quickstart and demo scenarios
-- Reuse the examples and runbooks
-- Open an issue for improvements or additional examples
-- Reference the official SEPPmail documentation for product-specific details
+- Review the quick start and landing page
+- Use the examples as a pilot baseline
+- Run a readiness workshop with Synedat
+- Refer to official SEPPmail documentation for product-specific details
